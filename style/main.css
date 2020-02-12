@@ -110,4 +110,36 @@ body {
     font-size: 28px;
     letter-spacing: .25px;
     color: #1976d2;
+    margin-bottom: 50px;
+}
+
+
+/* попытка настроить табы */
+.tabs-header{
+    display: flex;
+    text-align: center;
+    color: #00559b;
+    font-size: 36px;
+
+}
+.tab{
+    flex-basis: 50%;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.tab-active{
+    background-color: #2196f3;
+    color: #fff;
+    
+    font-weight: 500;
+    border-radius: 3px 3px 0 0;
+}
+.tab-content{
+    padding-top: 30px;
+    border: 1px solid;
+}
+
+.tab-hide{
+    display: none;
 }
