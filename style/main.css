@@ -28,15 +28,43 @@ body {
     text-decoration: none;
     padding: 11px 20px 11px 20px;
 }
-.logo-link:hover{
-    
+
+.logo-link:hover {
     background-color: #1375c5;
 }
-
+.nav-contact{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.number-column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.number-column::before{
+    content: '';
+    background-image: url('../img/phone.svg');
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-number-links{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-number-links:hover{
+    text-decoration: underline;
+}
 .place {
     padding: 21px 20px 20px 40px;
-    background-repeat: no-repeat;
-    background-position: left center;
     position: relative;
 }
 
@@ -68,7 +96,7 @@ body {
     justify-content: center;
 }
 
-.main-link{
+.main-link {
     margin-left: 50px;
     font-size: 14px;
     color: #747474;
@@ -77,70 +105,126 @@ body {
     padding-bottom: 12px;
     border-bottom: 2px solid transparent;
 }
-.main-link:hover{
+
+.main-link:hover {
     color: #0b79d3;
-    border-bottom: 2px solid #fd9045;
+    border-bottom: 2px solid #ee8b45;
 }
-.slider{
+
+.slider {
     padding: 50px;
     background-image: url('../img/slider-background.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slider-content{
+
+.slider-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.info-title{
+
+.info-title {
     font-size: 48px;
     margin-bottom: 50px;
     color: #fff;
     font-weight: 500;
 }
-.info-subtitle{
+
+.info-subtitle {
     font-size: 24px;
     color: #fff;
 }
-.rate{
-    padding: 50px 0;
+
+.rate {
+    padding: 20px 0;
     background-color: #96c1e7;
 }
-.rate-title{
+
+.rate-title {
     font-size: 28px;
     letter-spacing: .25px;
     color: #1976d2;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-
 /* попытка настроить табы */
-.tabs-header{
+
+.tabs-header {
     display: flex;
     text-align: center;
     color: #00559b;
     font-size: 26px;
-
 }
-.tab{
+
+.tab {
     flex-basis: 50%;
     cursor: pointer;
     padding: 15px;
-    font-family:  serif;
+    font-family: serif;
 }
 
-.tab-active{
+.tab-active {
     background-color: #2196f3;
     color: #fff;
-    
     font-weight: 500;
     border-radius: 3px 3px 0 0;
 }
-.tab-content{
+
+.tab-content {
+    margin-top: 1px;
     padding-top: 30px;
-    border: 1px solid;
+    border-top: 5px solid #1274c5;
+    border-bottom: 5px solid #1274c5;
 }
 
-.tab-hide{
+.tab-hide {
     display: none;
+}
+
+.rate-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate-clock {
+    width: 120px;
+}
+
+.rate-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    padding: 30px 15px;
+    background-image: url('../img/rate/rate-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.rate-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.rate-speed {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.rate-speed span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
+}
+
+.rate-price {
+    font-size: 22px;
+    font-weight: 400;
 }
