@@ -292,8 +292,21 @@ body {
 
 .news-card {
     flex-basis: 33%;
+    position: relative;
 }
-
+.news-card::after{
+    content: '';
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+.news-card:last-child::after{
+    counter-reset: '';
+    display: none;
+}
 .news-date {
     font-size: 14px;
     color: #e3e3e3;
