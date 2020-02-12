@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.nav {
+    background-color: #2196f3;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.logo-link {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 20px 11px 20px;
+}
+.logo-link:hover{
+    
+    background-color: #1375c5;
+}
+
+.place {
+    padding: 21px 20px 20px 40px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+.place::before {
+    content: '';
+    background-image: url('../img/pin.svg');
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fff;
+}
+
+.place:hover {
+    background-color: #1375c5;
+}
+
+.main {
+    background-color: #fafafa;
+}
+
+.main-content {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-link{
+    margin-left: 50px;
+    font-size: 14px;
+    color: #747474;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 12px;
+    border-bottom: 2px solid transparent;
+}
+.main-link:hover{
+    color: #0b79d3;
+    border-bottom: 2px solid #fd9045;
+}
+.slider{
+    padding: 50px;
+    background-image: url('../img/slider-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-title{
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.info-subtitle{
+    font-size: 24px;
+    color: #fff;
+}
+.rate{
+    padding: 50px 0;
+    background-color: #96c1e7;
+}
+.rate-title{
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #1976d2;
+}
