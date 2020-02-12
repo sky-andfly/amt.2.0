@@ -32,18 +32,21 @@ body {
 .logo-link:hover {
     background-color: #1375c5;
 }
-.nav-contact{
+
+.nav-contact {
     width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.number-column{
+
+.number-column {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.number-column::before{
+
+.number-column::before {
     content: '';
     background-image: url('../img/phone.svg');
     background-size: 25px 25px;
@@ -54,15 +57,18 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.nav-number-links{
+
+.nav-number-links {
     margin-bottom: 5px;
     font-size: 16px;
     color: #fff;
     text-decoration: none;
 }
-.nav-number-links:hover{
+
+.nav-number-links:hover {
     text-decoration: underline;
 }
+
 .place {
     padding: 21px 20px 20px 40px;
     position: relative;
@@ -178,6 +184,23 @@ body {
     border-bottom: 5px solid #1274c5;
 }
 
+.pon {
+    color: #e3e3e3;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-left: 4px solid #2196f3;
+}
+
+.pon span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
+}
+
 .tab-hide {
     display: none;
 }
@@ -227,4 +250,87 @@ body {
 .rate-price {
     font-size: 22px;
     font-weight: 400;
+}
+
+/* блок новостей */
+
+.news {
+    padding: 20px 0;
+    background-color: #1c76c0;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.read-more {
+    color: #fff;
+    font-size: 14px;
+}
+
+.news-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.news-cards {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.news-card {
+    flex-basis: 33%;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #e3e3e3;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* блок с кабельным тв */
+
+.television {
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.television-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.television-img {
+    width: 480px;
+    margin-bottom: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.television-info {
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.television-info span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
 }
