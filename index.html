@@ -13,11 +13,12 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" id="up">
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <a class="logo-link" href="#">AMT</a>
+
+                    <a class="logo-link" href="#"><img src="img/logo.png" alt="" class="logo-img"><span>AMT</span></a>
                 </div>
                 <div class="nav-contact">
                     <div class="number">
@@ -40,13 +41,13 @@
     <main class="main">
         <div class="container">
             <div class="main-content">
-                <div class="main-links">
-                    <a href="#" class="main-link">Интернет</a>
-                    <a href="#" class="main-link">Новости</a>
-                    <a href="#" class="main-link">Кабельное ТВ</a>
-                    <a href="#" class="main-link">IPTV</a>
-                    <a href="#" class="main-link">Статический IP</a>
-                    <a href="#" class="main-link">Контакты</a>
+                <div class="main-links" id="menu">
+                    <a href="#news-id" class="main-link">Новости</a>
+                    <a href="#rate-id" class="main-link">Интернет</a>
+                    <a href="#television-id" class="main-link">Кабельное ТВ</a>
+                    <!-- <a href="#" class="main-link">IPTV</a>
+                    <a href="#" class="main-link">Статический IP</a> -->
+                    <a href="#contact-id" class="main-link">Контакты</a>
                 </div>
             </div>
             <!-- /.main-content -->
@@ -77,7 +78,44 @@
     </section>
     <!-- /.slider -->
 
-    <section class="rate">
+
+
+    <!-- блок с новостями -->
+    <section class="news" id="news-id">
+        <div class="container">
+            <div class="news-content">
+                <h1 class="news-title">
+                    Новости
+                </h1>
+                <div class="news-cards">
+                    <div class="news-card">
+                        <p class="news-date">13.02.2020</p>
+                        <div class="news-description">
+                            Плановые технические работы
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <p class="news-date">13.02.2020</p>
+                        <div class="news-description">
+                            Изменение тарифов оплаты
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <p class="news-date">13.02.2020</p>
+                        <div class="news-description">
+                            В связи с праздниками отделение работает до 15:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.news-content -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.news -->
+
+    <!-- тарифные планы -->
+    <section class="rate" id="rate-id">
         <div class="container">
             <div class="rate-content">
                 <h1 class="rate-title">
@@ -86,7 +124,7 @@
 
                 <div class="tabs">
                     <div class="tabs-header">
-                        <div class="tab tab-city-header ">Город</div>
+                        <div class="tab tab-city-header ">Городской сектор</div>
                         <div class="tab tab-private-header">Частный сектор <span> <sup>*</sup> </span></div>
                     </div>
                     <!-- /.tabs-header -->
@@ -143,9 +181,9 @@
                         <!-- /.rate-cards -->
                     </div>
                     <div class="tab-content tab-private ">
-                        
+
                         <div class="rate-cards">
-                          
+
                             <div class="rate-card">
                                 <div class="rate-info">
                                     <h2 class="rate-name">
@@ -193,7 +231,8 @@
                                 </div>
                                 <img class="rate-clock" src="img/rate/clock.png" alt="">
                             </div>
-                            <span class="pon"><span> <sup>*</sup> </span> подключенние по технологии <span>PON</span> </span>
+                            <span class="pon"><span> <sup>*</sup> </span> подключенние по технологии <span>PON</span>
+                            </span>
                         </div>
                         <!-- /.rate-cards -->
                     </div>
@@ -208,45 +247,10 @@
     <!-- /.rate -->
 
 
-    <!-- блок с новостями -->
-    <section class="news">
-        <div class="container">
-            <div class="news-content">
-                <div class="news-header">
-                    <h1 class="news-title">
-                        Новости
-                    </h1>
-                    <a href="#" class="read-more">Больше новостей &#10149;</a>
-                </div>
-                <div class="news-cards">
-                    <div class="news-card">
-                        <p class="news-date">13.02.2020</p>
-                        <div class="news-description">
-                            Плановые технические работы
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <p class="news-date">13.02.2020</p>
-                        <div class="news-description">
-                            Изменение тарифов оплаты
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <p class="news-date">13.02.2020</p>
-                        <div class="news-description">
-                            В связи с праздниками отделение работает до 15:00
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.news-content -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.news -->
-    
+
+
     <!-- блок для кабельного телевиденья -->
-    <section class="television" data-vide-bg="video/landing">
+    <section class="television" id="television-id" data-vide-bg="video/landing">
         <div class="container">
             <div class="television-content">
                 <h1 class="television-title">Кабельное ТВ</h1>
@@ -265,9 +269,99 @@
     </section>
     <!-- /.television -->
 
+
+    <!-- <section class="ip">
+        <div class="container">
+            <div class="ip-content">
+                <div class="ip-header">
+                    <div class="left">
+                        IPTV
+                    </div>
+                    <div class="right">
+                        Статический IP
+                    </div>
+                </div>
+                /.ip-header
+                <div class="ip-body">
+                    <div class="ip-tv">
+                        IPTV (IP-телевидение, интернет-телевидение) - это телевизионное вещание при помощи
+                        интернет-соединения. Его название расшифровывается как Internet Protocol TV – телевидение по
+                        протоколу Интернета. Вещание осуществляется за счет передачи данных по транспортным каналам
+                        сети: проводным и беспроводным.
+                    </div>
+                    /.ip-tv
+                    <div class="ip-border">
+                    </div>
+                    /.ip-border
+                    <div class="static-ip">
+                        Если вы являетесь владельцем крупного веб-ресурса, вам следует подумать о статическом IP.
+                        Дополнительный IP-адрес для сайта – это уникальный, статический IP-адрес, который остается
+                        неизменным после выключения и перезагрузки роутера, позволяя параллельно подключать несколько
+                        различных устройств.
+                    </div>
+                    /.static-ip
+                </div>
+
+
+            </div>
+            /.ip-content
+        </div>
+        /.container
+    </section> -->
+
+
+
+    <section class="contact" id="contact-id">
+        <div class="container">
+            <div class="contacnt-content">
+                <h1 class="contact-title">
+                    Контакты
+                </h1>
+                <div class="contact-info">
+                    <div class="description">
+                        <p class="description-text">
+                            <span>Наш адрес:</span>
+                            г. Антрацит, ул. Калинина, 2
+                        </p>
+                        <p class="description-number">
+                            <span>Телефоны для справок</span>
+                            <a class="nav-number-links contact-number-link" href="tel:29262"> 2-92-62</a>
+                            <a class="nav-number-links contact-number-link" href="tel:380959010551">(095) 901-05-51</a>
+                            <a class="nav-number-links contact-number-link" href="tel:(072)1618627">(072) 161-86-27</a>
+                        </p>
+                    </div>
+                    <div class="map-block">
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2168.021189830617!2d39.092152644972764!3d48.108992659248244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e1ca41b3f3b93f%3A0x348d4cda7d9fd507!2sPp%20Teleradiokompaniya%20Amt!5e1!3m2!1sru!2sua!4v1581884957889!5m2!1sru!2sua"
+                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <!-- /.contact-info -->
+            </div>
+            <!-- /.contacnt-content -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.contact -->
+
+    <!-- модальное окно для карты -->
+
+    <div class="popup ">        
+        <div class="popup-content">
+            <div class="popup-close">
+                &times;
+            </div>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2168.021189830617!2d39.092152644972764!3d48.108992659248244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e1ca41b3f3b93f%3A0x348d4cda7d9fd507!2sPp%20Teleradiokompaniya%20Amt!5e1!3m2!1sru!2sua!4v1581884957889!5m2!1sru!2sua"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+
+    <!-- кнопка наверх -->
+    <a href="#up" id="up-block"> &#11014;</a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.vide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

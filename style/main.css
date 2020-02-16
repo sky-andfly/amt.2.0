@@ -12,6 +12,11 @@ body {
     background-color: #2196f3;
 }
 
+.logo-img {
+    width: 48px;
+    /* height: 48px; */
+}
+
 .nav-content {
     display: flex;
     justify-content: space-between;
@@ -22,11 +27,15 @@ body {
 }
 
 .logo-link {
+    width: 170px;
     font-size: 32px;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    padding: 11px 20px 11px 20px;
+    padding: 4px 20px 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-link:hover {
@@ -72,6 +81,7 @@ body {
 .place {
     padding: 21px 20px 20px 40px;
     position: relative;
+    cursor: pointer;
 }
 
 .place::before {
@@ -204,7 +214,8 @@ body {
 .tab-hide {
     display: none;
 }
-.tab span{
+
+.tab span {
     color: #ee8b45;
     font-weight: 700;
 }
@@ -263,26 +274,16 @@ body {
     background-color: #1c76c0;
 }
 
-.news-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.read-more {
-    color: #fff;
-    font-size: 14px;
-}
-.read-more:hover{
-    color: #ee8b45;
-    text-decoration: none;
+.news-content {
+    border-top: 5px solid #ee8b45;
+    padding-top: 20px;
 }
 
 .news-title {
     font-size: 28px;
     letter-spacing: .25px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .news-cards {
@@ -294,7 +295,8 @@ body {
     flex-basis: 33%;
     position: relative;
 }
-.news-card::after{
+
+.news-card::after {
     content: '';
     width: 2px;
     height: 30px;
@@ -303,10 +305,12 @@ body {
     right: 20%;
     top: 0;
 }
-.news-card:last-child::after{
+
+.news-card:last-child::after {
     counter-reset: '';
     display: none;
 }
+
 .news-date {
     font-size: 14px;
     color: #e3e3e3;
@@ -321,7 +325,7 @@ body {
 /* блок с кабельным тв */
 
 .television {
-    height: 100vh;
+    padding: 50px 0;
     padding-top: 20px;
 }
 
@@ -353,5 +357,146 @@ body {
 .television-info span {
     font-weight: 700;
     font-size: 26px;
+    color: #ee8b45;
+}
+
+/* блок ip tv и статический ip  */
+
+.ip {
+    background-color: #1c76c0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ip-header {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ip-border {
+    height: inherit;
+    width: 3px;
+    background-color: #2196f3;
+    border-radius: 8px;
+}
+
+.ip-body {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.ip-tv, .static-ip {
+    width: 500px;
+    line-height: 1.5;
+    color: #dae8f5;
+}
+
+/* контакты */
+
+.contact {
+    /* background-color: #2196f3; */
+    background-image: url('../img/rate/rate-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    padding: 20px 0;
+}
+
+.contact-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description-text, .description-number {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description-text span, .description-number span {
+    color: #ee8b45;
+    font-size: 26px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-number-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 600px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+/* прокрутка вверх */
+
+#up-block {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px 15px;
+    background-color: #1c76c0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+#up-block:hover {
+    background-color: #fff;
+    color: #1c76c0;
+    border: 1px solid #1c76c0;
+}
+
+/* модальное окно для карты */
+
+.popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.popup-active{
+    display: block;
+}
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-close {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    cursor: pointer;
+}
+.popup-close:hover{
     color: #ee8b45;
 }
