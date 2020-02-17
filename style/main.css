@@ -363,7 +363,7 @@ body {
 /* блок ip tv и статический ip  */
 
 .ip {
-    background-color: #1c76c0;
+    background-color: #fafafa;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -371,12 +371,18 @@ body {
 .ip-header {
     font-size: 28px;
     letter-spacing: .25px;
-    color: #fff;
+    color: #1c76c0;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
-
+.pon-ip-tv{
+    display: block;
+    color: #1c76c0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 0.9;
+}
 .ip-border {
     height: inherit;
     width: 3px;
@@ -387,15 +393,20 @@ body {
 .ip-body {
     display: flex;
     justify-content: space-around;
+    /* align-items: center; */
     text-align: justify;
 }
 
 .ip-tv, .static-ip {
-    width: 500px;
+    width: 520px;
     line-height: 1.5;
-    color: #dae8f5;
+    font-size: 14px;
+    color: #747474;
 }
-
+.orange{
+    color: #ee8b45;
+    font-weight: 700;
+}
 /* контакты */
 
 .contact {
