@@ -318,6 +318,7 @@ body {
 }
 
 .news-description {
+    width: 300px;
     font-size: 16px;
     color: #fff;
 }
@@ -436,6 +437,11 @@ body {
     font-size: 24px;
     color: #fff;
     margin-bottom: 20px;
+}
+.description-mode{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px; 
 }
 
 .description-text span, .description-number span {
