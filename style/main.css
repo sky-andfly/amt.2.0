@@ -14,7 +14,6 @@ body {
 
 .logo-img {
     width: 48px;
-    /* height: 48px; */
 }
 
 .nav-content {
@@ -307,7 +306,7 @@ body {
 }
 
 .news-card:last-child::after {
-    counter-reset: '';
+    content: '';
     display: none;
 }
 
@@ -353,6 +352,7 @@ body {
     color: #fff;
     line-height: 1.5;
     font-size: 22px;
+    margin-bottom: 50px;
 }
 
 .television-info span {
@@ -377,14 +377,24 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.pon-ip-tv{
+
+.hide-ip-title {
+    display: none;
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #1c76c0;
+    margin-bottom: 20px;
+}
+
+.pon-ip-tv {
     display: block;
     color: #1c76c0;
     font-size: 16px;
     text-align: justify;
-    line-height: 0.9;
+    line-height: 1.5;
     text-align: left;
 }
+
 .ip-border {
     height: inherit;
     width: 3px;
@@ -400,15 +410,17 @@ body {
 }
 
 .ip-tv, .static-ip {
-    width: 520px;
+    width: 40%;
     line-height: 1.5;
     font-size: 14px;
     color: #747474;
 }
-.orange{
+
+.orange {
     color: #ee8b45;
     font-weight: 700;
 }
+
 /* контакты */
 
 .contact {
@@ -430,7 +442,7 @@ body {
 .contact-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .description-text, .description-number {
@@ -438,10 +450,11 @@ body {
     color: #fff;
     margin-bottom: 20px;
 }
-.description-mode{
+
+.description-mode {
     font-size: 24px;
     color: #fff;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .description-text span, .description-number span {
@@ -460,6 +473,17 @@ body {
     width: 600px;
     height: 450px;
     border-radius: 8px;
+}
+
+/* здесь футер */
+
+.footer {
+    background-color: #2196f3;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    /* border-bottom: 1px solid #fff; */
 }
 
 /* прокрутка вверх */
@@ -495,7 +519,8 @@ body {
     left: 0;
     top: 0;
 }
-.popup-active{
+
+.popup-active {
     display: block;
 }
 
@@ -515,6 +540,193 @@ body {
     top: -10px;
     cursor: pointer;
 }
-.popup-close:hover{
+
+.popup-close:hover {
     color: #ee8b45;
 }
+
+.blue {
+    display: inline-block;
+    color: #ee8b45;
+    font-weight: 500;
+}
+
+/* адаптив */
+
+@media(max-width: 991px) {
+    /* новости */
+    .news-card {
+        width: 150px;
+    }
+    .news-card::after {
+        height: 70px;
+        right: 12%;
+    }
+    /* блок с айпи тв и статический айпи */
+    .ip-border {
+        display: none;
+    }
+    .ip-body {
+        flex-direction: column;
+    }
+    .ip-tv, .static-ip {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .hide-ip-title {
+        display: block;
+    }
+    /* контакты */
+    .contact-info {
+        justify-content: space-between;
+    }
+    .description-text, .description-number, .description-mode {
+        font-size: 16px;
+    }
+    .description-text span, .description-number span, .description-mode span {
+        font-size: 18px;
+    }
+    .map {
+        width: 500px;
+    }
+}
+
+@media(max-width: 900px) {
+    /* новости */
+    .news-card::after {
+        display: none;
+    }
+}
+@media(max-width: 840px) {
+    /* новости */
+    .news-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-card{
+        width: 300px;
+        border: 3px solid #ee8b45;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}
+@media(max-width: 810px) {
+   /* первый экран */
+   .slider-img{
+       display: none;
+   }
+   .slider-content{
+    justify-content: center;
+    text-align: center;
+   }
+   .main{
+       display: none;
+   }
+}
+@media(max-width: 790px) {
+    /* контакты */
+    
+    .map {
+        width: 400px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 760px) {
+    /* первый экран */
+    .info-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+ }
+ @media(max-width: 675px) {
+    /* контакты */
+    
+    .map {
+        width: 350px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 640px) {
+    /* контакты */
+    .contact-info {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .map {
+        width: 450px;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+ }
+ @media(max-width: 560px) {
+     /* первый экран */
+     .nav-contact{
+        justify-content: flex-end;
+     }
+     .place{
+         display: none;
+     }
+     /* тарифы */
+     .rate-info{
+         text-align: center;
+     }
+     .rate-clock{
+         display: none;
+
+     }
+     /* блок айпи */
+    .ip-tv, .static-ip {
+        line-height: 1.3;
+    }
+    .pon-ip-tv{
+        line-height: 1.2;
+    }
+
+ }
+ @media(max-width: 456px) {
+    /* контакты */
+    
+    .map {
+        width: 400px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 400px) {
+    /* контакты */
+    
+    .map {
+       display: none;
+    }
+ }
+ @media(max-width: 360px) {
+    /* первый экран */
+    .number-column::before{
+        display: none;
+    }
+    /* тарифные планы */
+    .rate-name,
+    .rate-speed,
+    .rate-price{
+        font-size: 16px;
+        margin-bottom: 10px;  
+    }
+    .pon{
+        font-size: 14px;
+    }
+ }
+ @media(max-width: 321px){
+    .first-delete{
+        display: none;
+        font-size: 10px;
+    }
+    .logo-img {
+        width: 32px;
+    }
+    .logo-link{
+        font-size: 18px;
+        padding: 4px 70px 8px 20px;
+    }
+ }
