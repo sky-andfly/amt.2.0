@@ -5,6 +5,12 @@ let tabPrivate = document.querySelector('.tab-private');
 let place = document.querySelector('.place');
 let popup = document.querySelector('.popup');
 let popupClose = document.querySelector('.popup-close');
+
+let list = document.querySelector('.btn-kanal');
+let popupList = document.querySelector('.popup-list');
+let popupCloseList= document.querySelector('.popup-close-list');
+
+
 // вешаем городу активность
 city.classList.add('tab-active');
 tabPrivate.classList.add('tab-hide');
@@ -43,6 +49,16 @@ place.addEventListener('click', function(){
 popupClose.addEventListener('click', function(){
     popup.classList.remove('popup-active');
 });
+
+
+// модальное окно списка каналов
+list.addEventListener('click', function(){
+    popupList.classList.add('popup-active-list');
+});
+popupCloseList.addEventListener('click', function(){
+    popupList.classList.remove('popup-active-list');
+});
+
 
 // плавная прокрутка якорей
  $(document).ready(function(){

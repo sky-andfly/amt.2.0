@@ -340,7 +340,22 @@ body {
     width: 480px;
     margin-bottom: 40px;
 }
-
+.television-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-kanal{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #ee8b45;
+    font-size: 18px;
+}
+.btn-kanal:hover{
+    color: #fff;
+    text-decoration: underline;
+}
 .column {
     display: flex;
     flex-direction: column;
@@ -474,6 +489,10 @@ body {
     height: 450px;
     border-radius: 8px;
 }
+.wifi{
+    padding-top: 30px;
+    text-align: center;
+}
 
 /* здесь футер */
 
@@ -544,7 +563,66 @@ body {
 .popup-close:hover {
     color: #ee8b45;
 }
+/* модальное окно для списка каналов*/
 
+.popup-list {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+ol{
+    display: flex;
+    width: 1050px;
+    justify-content: space-between;
+
+}
+.list{
+    background-color: #fff;
+    padding: 15px 50px;
+    border-radius: 8px;
+}
+.popup-active-list{
+    display: block;
+}
+.list-header{
+    font-size: 18px;
+    color: #ee8b45;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 500;
+
+}
+.first-list,
+.second-list,
+.third-list,
+.four-list,
+.five-list{
+flex-basis: 20%;
+}
+.popup-content-list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-close-list{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.popup-close-list:hover {
+    color: #ee8b45;
+}
 .blue {
     display: inline-block;
     color: #ee8b45;
@@ -552,7 +630,12 @@ body {
 }
 
 /* адаптив */
-
+@media(max-width: 1200px) {
+    /* список каналов */
+    .btn-kanal {
+        display: none;
+    }
+}
 @media(max-width: 991px) {
     /* новости */
     .news-card {
