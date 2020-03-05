@@ -504,6 +504,13 @@ body {
     text-align: center;
     /* border-bottom: 1px solid #fff; */
 }
+.developer{
+    color: #fff;
+    font-size: 12px;
+}
+.developer:hover{
+    color: #ee8b45;
+}
 
 /* прокрутка вверх */
 
